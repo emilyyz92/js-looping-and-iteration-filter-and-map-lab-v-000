@@ -17,7 +17,7 @@ function exactMatch(array, criteria) {
   return array.filter(function(object) {
     const trueOrFalse = [];
     for (const key in criteria) {
-      object[key] === criteria[key]
+      trueOrFalse.push(object[key] === criteria[key]);
     }
   })
 }
