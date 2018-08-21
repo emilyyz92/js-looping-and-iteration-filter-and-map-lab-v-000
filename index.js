@@ -25,7 +25,7 @@ function exactMatch(array, criteria) {
 
 function exactMatchToList(array, criteria) {
   const drivers = exactMatch(array, criteria);
-  return drivers.map( 
-    function(driver) {return driver[name]}
+  return drivers.map(
+    function(driver) {return driver["name"]}
   )
 }
