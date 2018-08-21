@@ -22,3 +22,8 @@ function exactMatch(array, criteria) {
     return trueOrFalse.every(value => value === true)
   })
 }
+
+function exactMatchToList(array, criteria) {
+  const drivers = exactMatch(array, criteria);
+  return drivers.map( function(driver) {return driver[name]})
+}
