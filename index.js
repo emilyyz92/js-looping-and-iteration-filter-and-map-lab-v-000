@@ -14,10 +14,11 @@ function driverNamesWithRevenueOver(array, revenue) {
 }
 
 function exactMatch(array, criteria) {
-  return array.filter(function(object) {
+  return array.filter( function(object) {
     const trueOrFalse = [];
     for (const key in criteria) {
       trueOrFalse.push(object[key] === criteria[key]);
     }
+    return trueOrFalse.every(value => value === true)
   })
 }
