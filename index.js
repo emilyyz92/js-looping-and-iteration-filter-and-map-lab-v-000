@@ -13,7 +13,7 @@ function driverNamesWithRevenueOver(array, revenue) {
   return nameArray;
 }
 
-function exactMatch(array, criteriaObject) {
+function exactMatch(array, criteria) {
   return array.filter(function(object) {
     object[Object.keys(criteriaObject)[0]] === Object.values(criteriaObject)[0];
   })
